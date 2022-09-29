@@ -41,14 +41,6 @@ table td {
     animation-iteration-count: infinite;
 }
 
-.slim {
-    animation: wobble 90s;
-    animation-iteration-count: infinite;
-    position: absolute;
-    right: 130px;
-    bottom: 20px;
-}
-
 @keyframes wobble {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }

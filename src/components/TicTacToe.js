@@ -111,7 +111,6 @@ const TicTacToe = () => {
                     <button className='reset' onClick={() => handleRestart()}>Play Again</button>
                 </div>
             )}
-            <p className='slim'>Shoutout Slim Thick</p>
         </div>
     </div>
 )}
