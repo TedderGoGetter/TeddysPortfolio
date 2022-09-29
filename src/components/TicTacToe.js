@@ -60,6 +60,10 @@ const TicTacToe = () => {
             setTurn('x')
         }
 
+        if (!squares.includes('')) {
+            setWinner('nobody')
+        }
+
         victoryCheck(squares)
         setCells(squares)
     }
@@ -73,35 +77,41 @@ const TicTacToe = () => {
         return <td onClick={() => handleClick(num)}>{cells[num]}</td>
     }
 
+    const mainLogo = new URL('../images/tictacted.png', import.meta.url) 
 
     return (
-    <div className='tictac-container'>
-        <table>
-            Turn: {turn}
-            <tbody>
-                <tr>
-                    <Cell num={0} />
-                    <Cell num={1} />
-                    <Cell num={2} />
-                </tr>
-                <tr>
-                    <Cell num={3} />
-                    <Cell num={4} />
-                    <Cell num={5} />
-                </tr>
-                <tr>
-                    <Cell num={6} />
-                    <Cell num={7} />
-                    <Cell num={8} />
-                </tr>
-            </tbody>
-        </table>
-        {winner && (
-            <div>
-                <p>{winner} is the winner!</p>
-                <button onClick={() => handleRestart()}>Play Again</button>
-            </div>
-        )}
+    <div className='main-container'>
+
+        <img src={mainLogo} alt="" className='main-logo'></img>
+
+        <div className='tictac-container'>
+            <table>
+                Turn: {turn}
+                <tbody>
+                    <tr>
+                        <Cell num={0} />
+                        <Cell num={1} />
+                        <Cell num={2} />
+                    </tr>
+                    <tr>
+                        <Cell num={3} />
+                        <Cell num={4} />
+                        <Cell num={5} />
+                    </tr>
+                    <tr>
+                        <Cell num={6} />
+                        <Cell num={7} />
+                        <Cell num={8} />
+                    </tr>
+                </tbody>
+            </table>
+            {winner && (
+                <div>
+                    <p>{winner} is the winner!</p>
+                    <button className='reset' onClick={() => handleRestart()}>Play Again</button>
+                </div>
+            )}
+        </div>
     </div>
 )}
 
