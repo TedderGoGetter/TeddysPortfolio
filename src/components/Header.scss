@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .header-container {
     display:flex;
     width:100%;
     justify-content: center;  
     font-family: 'Raleway', sans-serif;
-    color:rgb(240, 240, 240);
+    color:#FA6C66;
     font-size: 1.1em;
     position:fixed;
     padding: 1vw;
     z-index: 10;
+    
 }
 
 .selected {

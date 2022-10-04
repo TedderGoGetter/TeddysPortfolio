@@ -1,12 +1,12 @@
 import './Music.scss'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
-
+const baseScrollSpeed = 0.5
 
 const Music = () => {
   return (
     <div className='music-container'>
-        <Parallax className='parallax' pages={3}>
+        <Parallax className='parallax' pages={6}>
             <ParallaxLayer
                 offset={0}
                 factor={2}
@@ -21,11 +21,23 @@ const Music = () => {
             </ParallaxLayer>
 
             <ParallaxLayer offset={1} speed={0.5}>
-                <h2 className='title'>Is the shit</h2>
+                <h2 className='title'>Summertime Sorrel</h2>
             </ParallaxLayer>
 
             <ParallaxLayer offset={2} speed={0.5}>
-                <h2 className='title'>frfr</h2>
+                <h2 className='title'>Tokyo Garfunkel</h2>
+            </ParallaxLayer>
+
+            <ParallaxLayer offset={3} speed={0.5}>
+                <h2 className='title'>Sobber Lies</h2>
+            </ParallaxLayer>
+
+            <ParallaxLayer offset={4} speed={0.5}>
+                <h2 className='title'>Wet Feet</h2>
+            </ParallaxLayer>
+
+            <ParallaxLayer offset={5} speed={0.5}>
+                <h2 className='title'>Stream My Music</h2>
             </ParallaxLayer>
 
         </Parallax>
