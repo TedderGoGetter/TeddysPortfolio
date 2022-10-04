@@ -11,6 +11,7 @@ const Header = () => {
         <a className="contact links" href="/" target="_blank"><h3>Get In Touch</h3></a>
         <div className="icon1 icons"></div>
         <div className="icon2 icons"></div>
+        <div className='space-right'></div>
     </div>
   )
 }
