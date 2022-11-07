@@ -21,7 +21,7 @@ const Music = () => {
             </ParallaxLayer>
 
             <ParallaxLayer offset={1} speed={0.5}>
-                <h2 className='title'>Summertime Sorrel</h2>
+                <h2 className='title'>Good as Gold</h2>
             </ParallaxLayer>
 
             <ParallaxLayer offset={2} speed={0.5}>

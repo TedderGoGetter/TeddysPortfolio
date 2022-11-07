@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
+.music-container {
+    height: 100%;
+    width: 100%;
+}
+
 .parallax {
     display:flex;
     width:100%;
@@ -7,7 +12,7 @@
     font-family: 'Raleway', sans-serif;
     color:rgb(240, 240, 240);
     font-size: 1.1em;
-    position:fixed;
+    position: absolute;
     padding: 1vw;
 }
 

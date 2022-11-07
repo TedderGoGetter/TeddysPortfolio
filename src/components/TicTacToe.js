@@ -1,6 +1,8 @@
 import './TicTacToe.scss'
 import {useState} from 'react'
 
+//this component is useless and only sometimes used as a filler.
+
 const TicTacToe = () => { 
     const [turn, setTurn] = useState('x')
     const [cells, setCells] = useState(Array(9).fill(''))
