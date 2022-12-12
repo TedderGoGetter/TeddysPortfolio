@@ -1,12 +1,12 @@
 import './App.scss';
 import Header from './components/Header';
-import Music from './components/Music'
+import Content from './components/Content';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Music/>
+      <Content/>
 
     </div>
   );
