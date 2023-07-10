@@ -18,7 +18,7 @@ const Content = () => {
       Teddy
       <br></br>
       <br></br>
-      PS: I'm writing a music promotion guide, you can follow it in real-time <a href="https://docs.google.com/document/d/1igfoVMDksUTgILmNIQC1ZR9kXSlajUhxaR2KKfyUs9Q/edit" target="_blank" rel="noreferrer">here</a>
+      Thank you all for your continued support. Join our Discord <a href="https://discord.gg/rvkZq2NxQa" target="_blank" rel="noreferrer">here</a>
       </h3>
       <img src={teddFace} alt="" className='teddface'></img>
       <h5>
